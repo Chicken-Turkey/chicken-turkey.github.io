@@ -1,0 +1,251 @@
+body{
+    background-color: #d8ad97;
+}
+.card-title {
+    font-family: "Pacifico", cursive;
+}
+
+img {
+    width: 100%;
+}
+
+.top-text {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    z-index: 5;
+    font-size: 4em;
+    text-shadow: 0px 0px 4px wheat, 0px 0px 8px rgb(255, 247, 232), 0px 0px 15px rgb(146, 145, 143);
+    text-align: center;
+    font-family: "Gabriela", serif;
+}
+
+@media(max-width: 992px) and (min-width: 768px) {
+    .top-text {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-text {
+        font-size: 2em;
+        /* від 768 і менше */
+    }
+}
+
+header {
+    position: relative;
+    z-index: 5;
+}
+
+.card {
+    margin: 15px;
+    height: 100%;
+    border: 2px solid #24170f;
+    border-radius: 20px;
+    background-color: #d8ad97;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.btn {
+    background-color: #754f3a;
+    border: none;
+    font-family: "Gloria Hallelujah", cursive;
+    color:  #e2d8d4;
+}
+
+.btn:hover {
+    background-color: #24170f;
+    border: none;
+    color:  #e2d8d4;
+}
+
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.add-products,
+.clear-grn,
+.select-product,
+.inp-vaga {
+    background-color: #754f3a;
+    border: none;
+    padding: 4px;
+    border-radius: 7px;
+    color: white;
+}
+
+.add-products,
+.clear-grn {
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.calculator-vartosti {
+    text-align: center;
+    padding: 60px;
+    border: 4px solid #24170f;
+    background-color: rgb(87, 56, 38);
+    color: white;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 20%;
+    height: 450px;
+    width: 0;
+    display: none;
+
+
+}
+
+@media (max-width: 768px) {
+    .calculator-vartosti {
+        padding: 20px;
+    }
+}
+
+@keyframes show-calc {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes hide-calc {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.close-calculator-vartosti {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    color: antiquewhite;
+    font-size: 1.9em;
+}
+
+.close-calculator-vartosti:hover {
+    cursor: pointer;
+    color: burlywood;
+}
+
+.inp-vaga {
+    width: 100px;
+}
+
+.inp-vaga::placeholder {
+    color: white;
+}
+
+.select-product {
+    width: 220px;
+}
+
+.calculate-btn {
+    position: fixed;
+    transform: rotate(90deg);
+    right: -60px;
+    top: 40%;
+    background-color: #754f3a;
+    color:  #e2d8d4;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.calculate-btn:hover {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+h5 {
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+.logo-nav {
+    width: 230px;
+}
+
+.telephone {
+    text-decoration: none;
+    color: #754f3a;
+    font-weight: 900;
+    font-size: 18px;
+
+}
+
+.telephone:hover {
+    color: #24170f;
+    text-decoration: none;
+}
+
+.img-line {
+    height: 80px;
+    background: url(img-line.png);
+    background-size: contain;
+    margin-top: 30px;
+    border-bottom: 2px solid #24170f;
+    animation: move 13s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+footer {
+    background-color: #24170f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+footer .telephone{
+    color: #745e53;
+}
+
+.link-viber {
+    color: #b19d93;
+    text-decoration: none;
+}
+.move-top{
+    position: fixed;
+    right: 15px;
+    bottom: 70px;
+    width: 25px;
+    height: 60px;
+    text-align: center;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-family: "Gabriela", serif;
+}
