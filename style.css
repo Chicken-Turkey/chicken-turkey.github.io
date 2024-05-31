@@ -90,6 +90,12 @@ header {
     font-size: 1.2rem;
     font-weight: 900;
 }
+.clear-grn:hover {
+    background-color: #24170f;
+}
+.add-products:hover{
+    background-color: #24170f;
+}
 
 .calculator-vartosti {
     text-align: center;
