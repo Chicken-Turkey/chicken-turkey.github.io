@@ -236,10 +236,14 @@ footer {
 footer .telephone{
     color: #745e53;
 }
+footer .telephone:hover{
+    color: #b19d93;
+}
 
 .link-viber {
     color: #b19d93;
-    text-decoration: none;
+    text-decoration: underline;
+
 }
 .move-top{
     position: fixed;
